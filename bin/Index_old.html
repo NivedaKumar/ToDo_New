@@ -13,7 +13,7 @@
             <div id="header">
                     <div class="header">
                         <div id="home">
-                            <a id="homeLink" href="C:\Users\marin\OneDrive\Desktop\Angular\ResponsiveApp\Index.html">
+                            <a id="homeLink" href="C:\Users\marin\OneDrive\Desktop\Angular\ToDo_New\Index.html">
                                 <img src="C:\Users\marin\OneDrive\Desktop\Angular\ToDo_New\src\to-do.jpeg" alt="ToDo App"/>
                             </a>
                             <div id="headerVal">
@@ -29,8 +29,8 @@
                         </div>
                     </div>
             </div>
-            <div id="app" class="row">
-                <div id="navbar" class="col-3 col-s-3">
+            <div id="app">
+                <div id="navbar" class="col-3">
                     <FontAwesomeIcon icon="fa-solid fa-bars" />
                     <div id="menuBar">
                         <div>
@@ -43,13 +43,49 @@
                         </div>
                     </div>
                 </div>
-                <div id="content" class="col-9 col-s-9">
+                <div id="content" class="col-9">
                     <div id="form_create">
                         <form id="formCreate">
                             <!-- <i class="fa-solid fa-plus"></i> -->
                             <input type="text" class="form_create" required/>
                             <button type="submit" id="createBtn"><i class="fa-solid fa-plus"></i></button>
                         </form>
+                        <div id="display">
+                            <table id="tasktbl">
+                                <thead>
+                                    <tr>
+                                        <th><div>SNo.<input type="checkbox" class="checkbox" id="selectAllCheckbox"></div></th>
+                                        <th>Task Name</th>
+                                        <th>Date</th>
+                                        <th>Location</th>
+                                        <th>Actions</th>
+                                        <!-- <th>Complete</th> -->
+                                        <!-- <th>Delete</th> -->
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- the js content will populate here. -->
+                                </tbody>
+                            </table>
+                        </div>
+                        <div id="noTasks">
+                            <h3>Welcome To To-Do App</h3>
+                        </div>
+                        <div id="SearchValNotFound">
+                            <h2>Value Not found!</h2>
+                        </div>
+                        
+                    </div>
+                    <div class="toast" id="added">
+                        Task added to the list!
+                    </div>
+                    <div class="toast" id="completed">
+                        Task has been marked as complete!
+                    </div>
+                    <div class="toast_delete" id="deleted">
+                        Task Deleted!
+                    </div>
+
                     <!-- <div class="pagination" id="pagination">
                         <a href="#" id="prev">Previous</a>
                         <a href="#" class="page-link" data-page="1">1</a>
@@ -58,41 +94,9 @@
                         <a href="#" id="next">Next</a>
                         <p id="page-numbers"></p>
                     </div> -->
-                    </div>
-                    <div id="display" style="overflow-x: auto; overflow-y: auto;">
-                        <table id="tasktbl">
-                            <thead>
-                                <tr>
-                                    <th><div>SNo.<input type="checkbox" class="checkbox" id="selectAllCheckbox"></div></th>
-                                    <th>Task Name</th>
-                                    <th>Date</th>
-                                    <th>Location</th>
-                                    <th>Actions</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <!-- the js content will populate here. -->
-                            </tbody>
-                        </table>
-                    </div>
-                    <div id="noTasks">
-                        <h3>Welcome To To-Do App</h3>
-                    </div>
-                    <div id="SearchValNotFound">
-                        <h2>Value Not found!</h2>
-                    </div>  
                 </div>
             </div>
         </div>
-    </div>
-    <div class="toast" id="added">
-        Task added to the list!
-    </div>
-    <div class="toast" id="completed">
-        Task has been marked as complete!
-    </div>
-    <div class="toast_delete" id="deleted">
-        Task Deleted!
     </div>
     <script src="Script.js"></script>
 </body>

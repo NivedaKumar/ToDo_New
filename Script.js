@@ -68,8 +68,8 @@ window.onload= function() {
 
 function createTableRows(Sno,idKeyVal,taskName,dateTaskEntered,location,tbl_body_display){
     const tbl_row = document.createElement('tr');
-    let compBtn = '<button type="button" style="cursor:pointer;" id="comp_' + idKeyVal + '"onclick="compTask(event)"><i id="comp_icon_'+idKeyVal+'" class="fa-solid fa-check"></i></button>';//used inline css and id is unique for the button and the icon
-    let delBtn = '<button type="button" style="cursor:pointer;" id="del_' + idKeyVal + '" onclick="delTask(event)"><i id="del_icon_'+idKeyVal+'" class="fa-solid fa-trash"></i></button>';
+    let compBtn = '<button type="button" class="action_button" style="cursor:pointer;" id="comp_' + idKeyVal + '"onclick="compTask(event)"><i id="comp_icon_'+idKeyVal+'" class="fa-solid fa-check"></i></button>';//used inline css and id is unique for the button and the icon
+    let delBtn = '<button type="button" class="action_button" style="cursor:pointer;" id="del_' + idKeyVal + '" onclick="delTask(event)"><i id="del_icon_'+idKeyVal+'" class="fa-solid fa-trash"></i></button>';
     let checkBox = '<input type="checkbox" name="checkboxList" id="checkbox_'+idKeyVal+'"/>';
     // let dropDownList = '<select id="actionList" onChange="actionSelection(event,'+idKeyVal+')"><option>Select an action..</option><option value="completed">Complete</option><option value="deleted">Delete</option></select>';
 
